@@ -34,10 +34,11 @@
     <div class="container">
         <h2>🎮 我的遊戲與興趣比例圖</h2>
         
-        <!-- 使用原生 HTML5 SVG 畫圓餅圖，完全不需要連網與套件 -->
-        <svg viewBox="0 0 64 64" width="250" height="250" style="transform: rotate(-90deg); border-radius: 50%;">
-            <!-- 1. Apex (30%): 顏色 橘色 (#e67e22) -->
-            <circle r="16" cx="32" cy="32" fill="transparent" stroke="#e67e22" stroke-width="32" stroke-dasharray="30 100" stroke-dashoffset="0" />
+  
+             <!-- 使用原生 HTML5 SVG 畫圓餅圖，完全不需要連網與套件 -->
+        <svg viewBox="0 0 64 64" width="250" height="250" style="transform: rotate(-90deg); border-radius: 50%; background-color: #e67e22;">
+            <!-- 1. Apex (30%): 直接用背景色打底，或用圓形填滿中心 -->
+            <circle r="16" cx="32" cy="32" fill="#e67e22" />
             
             <!-- 2. 瓦羅蘭 (25%): 顏色 紅色 (#e74c3c) -->
             <circle r="16" cx="32" cy="32" fill="transparent" stroke="#e74c3c" stroke-width="32" stroke-dasharray="25 100" stroke-dashoffset="-30" />
@@ -48,6 +49,7 @@
             <!-- 4. 遊戲王 (15%): 顏色 紫色 (#9b59b6) -->
             <circle r="16" cx="32" cy="32" fill="transparent" stroke="#9b59b6" stroke-width="32" stroke-dasharray="15 100" stroke-dashoffset="-85" />
         </svg>
+
 
         <!-- 圖表顏色標籤說明 -->
         <ul class="legend">
