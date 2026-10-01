@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同學網站推薦連結</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; }
+        nav { background-color: #2c3e50; padding: 15px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #1abc9c; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        h2 { text-align: center; margin-bottom: 30px; color: #2c3e50; }
+
+        /* 卡片網格 RWD 佈局 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-bottom: 10px; color: #34495e; }
+        .card p { color: #666; font-size: 0.95rem; margin-bottom: 20px; }
+        
+        .btn { display: inline-block; background-color: #1abc9c; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; }
+        .btn:hover { background-color: #16a085; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">🏠 首頁</a>
+        <a href="chart.html">📊 統計圖表</a>
+        <a href="links.html">🔗 同學連結</a>
+    </nav>
+
+    <div class="container">
+        <h2>🔗 優秀同學網站推薦連結</h2>
+        <div class="grid">
+            
+            <!-- 同學 1 -->
+            <div class="card">
+                <h3>王小明的個人空間</h3>
+                <p>專注於前端切版與動畫設計的精美網站，排版非常值得參考學習。</p>
+                <a href="https://netlify.app" target="_blank" class="btn">造訪網站 →</a>
+            </div>
+
+            <!-- 同學 2 -->
+            <div class="card">
+                <h3>李小華的技術網誌</h3>
+                <p>紀錄了許多關於 JavaScript 與後端整合的心得，內容非常紮實。</p>
+                <a href="https://netlify.app" target="_blank" class="btn">造訪網站 →</a>
+            </div>
+
+            <!-- 同學 3 -->
+            <div class="card">
+                <h3>張小芬的創意設計坊</h3>
+                <p>充滿豐富色彩與 UIUX 巧思的形象網頁，美感與響應式體驗極佳。</p>
+                <a href="https://netlify.app" target="_blank" class="btn">造訪網站 →</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

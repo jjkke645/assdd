@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數據統計圖表</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; }
+        
+        /* 導覽列 */
+        nav { background-color: #2c3e50; padding: 15px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #1abc9c; }
+        
+        /* 內容容器 */
+        .container { max-width: 600px; margin: 40px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        h2 { margin-bottom: 25px; color: #2c3e50; }
+        
+        /* 圖例說明樣式 */
+        .legend { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-top: 25px; list-style: none; }
+        .legend li { display: flex; align-items: center; font-size: 1rem; }
+        .color-box { width: 18px; height: 18px; margin-right: 8px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">🏠 首頁</a>
+        <a href="chart.html">📊 統計圖表</a>
+        <a href="links.html">🔗 同學連結</a>
+    </nav>
+
+    <div class="container">
+        <h2>🎮 我的遊戲與興趣比例圖</h2>
+        
+        <!-- 使用原生 HTML5 SVG 畫圓餅圖，完全不需要連網與套件 -->
+        <svg viewBox="0 0 64 64" width="250" height="250" style="transform: rotate(-90deg); border-radius: 50%;">
+            <!-- 1. Apex (30%): 顏色 橘色 (#e67e22) -->
+            <circle r="16" cx="32" cy="32" fill="transparent" stroke="#e67e22" stroke-width="32" stroke-dasharray="30 100" stroke-dashoffset="0" />
+            
+            <!-- 2. 瓦羅蘭 (25%): 顏色 紅色 (#e74c3c) -->
+            <circle r="16" cx="32" cy="32" fill="transparent" stroke="#e74c3c" stroke-width="32" stroke-dasharray="25 100" stroke-dashoffset="-30" />
+            
+            <!-- 3. 西洋棋 (30%): 顏色 深藍 (#34495e) -->
+            <circle r="16" cx="32" cy="32" fill="transparent" stroke="#34495e" stroke-width="32" stroke-dasharray="30 100" stroke-dashoffset="-55" />
+            
+            <!-- 4. 遊戲王 (15%): 顏色 紫色 (#9b59b6) -->
+            <circle r="16" cx="32" cy="32" fill="transparent" stroke="#9b59b6" stroke-width="32" stroke-dasharray="15 100" stroke-dashoffset="-85" />
+        </svg>
+
+        <!-- 圖表顏色標籤說明 -->
+        <ul class="legend">
+            <li><div class="color-box" style="background-color: #e67e22;"></div> Apex: 30%</li>
+            <li><div class="color-box" style="background-color: #e74c3c;"></div> 瓦: 25%</li>
+            <li><div class="color-box" style="background-color: #34495e;"></div> 西洋棋: 30%</li>
+            <li><div class="color-box" style="background-color: #9b59b6;"></div> 遊戲王: 15%</li>
+        </ul>
+    </div>
+
+</body>
+</html>
